@@ -9,13 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color:whitesmoke;
-    color: #333;
-}
-
-img{
-    width:auto;
-    height:auto;
+    background-color: gray;
+    color: whitesmoke;
 }
 
 /* Header */
@@ -28,9 +23,9 @@ header {
 
 header h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
@@ -44,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: whte;
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -60,75 +55,37 @@ main {
     padding: 20px;
 }
 
+/* Players Section */
 h2 {
     font-size: 2em;
-    margin-bottom: 10px;
     color: #333;
+    margin-bottom: 10px;
 }
 
-/* Contact Us Page Form */
-form {
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Player Images */
+img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Player Card Layout */
+.player-card {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-h2 {
-    font-size: 2.2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-form p {
-    font-size: 1.1em;
-    color: #555;
     margin-bottom: 30px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.submit-btn {
-    background-color: #333;
-    color: white;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #007bff;
 }
 
 /* Footer */
@@ -159,18 +116,7 @@ footer p {
         font-size: 1.8em;
     }
 
-    form {
-        padding: 15px;
-    }
-
-    input[type="text"], input[type="email"], textarea {
-        padding: 8px;
-    }
-
-    .submit-btn {
-        font-size: 1em;
-        padding: 8px 16px;
+    img {
+        width: 90%;
     }
 }
-
-

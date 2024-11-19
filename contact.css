@@ -8,14 +8,9 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color:whitesmoke;
+    background-color: #f4f4f4;
     color: #333;
-}
-
-img{
-    width:auto;
-    height:auto;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -28,15 +23,15 @@ header {
 
 header h1 {
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 10px;
-    background-color: #c7c4c4;
+    background-color: #444;
 }
 
 nav ul li {
@@ -55,67 +50,64 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* Contact Us Page Form */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 2.2em;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-form p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 30px;
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    font-size: 1.1em;
-    color: #333;
+    font-size: 1em;
     margin-bottom: 5px;
-    display: block;
+    color: #333;
 }
 
 input[type="text"], input[type="email"], textarea {
-    width: 100%;
     padding: 10px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 8px;
+    width: 100%;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     outline: none;
     border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 textarea {
     resize: vertical;
 }
 
+/* Submit Button */
 .submit-btn {
     background-color: #333;
     color: white;
@@ -146,21 +138,16 @@ footer p {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
+    main {
+        padding: 15px;
     }
 
     h2 {
         font-size: 1.8em;
     }
 
-    form {
-        padding: 15px;
+    p {
+        font-size: 1em;
     }
 
     input[type="text"], input[type="email"], textarea {
@@ -172,5 +159,4 @@ footer p {
         padding: 8px 16px;
     }
 }
-
 
